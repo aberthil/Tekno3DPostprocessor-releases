@@ -1,4 +1,4 @@
-# Tekno3D - Postprocessor
+﻿# Tekno3D - Postprocessor
 
 <p align="center">
   <img src="assets/tekno3d-postprocessor.png" alt="Tekno3D - Postprocessor" width="128" />
@@ -13,16 +13,16 @@
 
 ---
 
-## What is this? (plain English)
+## What is this?
 
 **Tekno3D - Postprocessor is the helper that waits while Tekno3D Video Enhance Studio finishes a job, then tidies up for you.**
 
 Tekno writes long-named MKVs into an output folder (and leaves indexes / JSON next to them). This app:
 
 1. **Watches** that folder for a finished file (default pattern: `*_VESAI_Studio_*.mkv`)  
-2. When the file stops growing (stable for a few seconds)…  
+2. When the file stops growing (stable for a few seconds)â€¦  
 3. Runs your **post-process** checklist  
-4. Optionally **pings your phone** via Pushover (“conversion done”)
+4. Optionally **pings your phone** via Pushover (â€œconversion doneâ€)
 
 You do **not** re-encode video here. You run this **beside** Tekno so you can walk away: files land where you want them, names get cleaned, leftovers go to the Recycle Bin, and you get a notification.
 
@@ -30,11 +30,11 @@ You do **not** re-encode video here. You run this **beside** Tekno so you can wa
 
 | Step | In plain words |
 |------|----------------|
-| **1 · Move** | Copy/move the finished MKV out of Tekno’s output folder into your real library folder. |
-| **2 · Rename** | Strip Tekno’s long suffix (`_DolbyVision_…_VESAI_Studio_…`) back to the original show name. |
-| **3 · Recycle original** | Send the *source* video (and its index) to the Recycle Bin after a successful move. |
-| **4 · Cleanup** | Recycle leftover sidecars Tekno left behind (`.ffindex`, vapoursynth JSON, logs, …). |
-| **5 · Run script** | Optional: launch a `.exe` / `.bat` / PowerShell / Python when everything else is done. |
+| **1 Â· Move** | Copy/move the finished MKV out of Teknoâ€™s output folder into your real library folder. |
+| **2 Â· Rename** | Strip Teknoâ€™s long suffix (`_DolbyVision_â€¦_VESAI_Studio_â€¦`) back to the original show name. |
+| **3 Â· Recycle original** | Send the *source* video (and its index) to the Recycle Bin after a successful move. |
+| **4 Â· Cleanup** | Recycle leftover sidecars Tekno left behind (`.ffindex`, vapoursynth JSON, logs, â€¦). |
+| **5 Â· Run script** | Optional: launch a `.exe` / `.bat` / PowerShell / Python when everything else is done. |
 
 Modes: **Single file** (stop after one) or **Batch** (keep watching). Can start with Windows, sit in the **tray**, and check for **App updates** from Settings.
 
@@ -46,13 +46,13 @@ Modes: **Single file** (stop after one) or **Batch** (keep watching). Can start 
   <img src="assets/gui-main.png" alt="Tekno3D - Postprocessor main window" width="480" />
 </p>
 
-<p align="center"><em>Main window — watch folder, filename pattern, move / rename / recycle / cleanup.</em></p>
+<p align="center"><em>Main window â€” watch folder, filename pattern, move / rename / recycle / cleanup.</em></p>
 
 <p align="center">
-  <img src="assets/gui-settings.png" alt="Settings — startup, App update, Pushover" width="360" />
+  <img src="assets/gui-settings.png" alt="Settings â€” startup, App update, Pushover" width="360" />
 </p>
 
-<p align="center"><em>Settings — run at start / tray, App update, Pushover messages.</em></p>
+<p align="center"><em>Settings â€” run at start / tray, App update, Pushover messages.</em></p>
 
 ---
 
@@ -62,9 +62,9 @@ Modes: **Single file** (stop after one) or **Batch** (keep watching). Can start 
 2. Set **Output folder** to the same folder Tekno writes into (or drop the folder onto the field).  
 3. Leave the default filename pattern unless you use a custom Tekno naming scheme.  
 4. Tick the post-process steps you want (Move destination, rename, recycle, cleanup).  
-5. Optional: **Settings** → enable Pushover and send a test.  
+5. Optional: **Settings** â†’ enable Pushover and send a test.  
 6. Click **Start watching** (or enable *Run at start* so it begins when the app opens).  
-7. Run your Tekno jobs as usual — when an MKV matches and goes stable, the checklist runs.
+7. Run your Tekno jobs as usual â€” when an MKV matches and goes stable, the checklist runs.
 
 **Log** and **Settings** dock beside the main window (same style as the Dolby Vision apps).
 
@@ -102,7 +102,7 @@ Installs to `C:\DolbyVisionScripts\Tekno3DPostprocessor` by default. Settings an
 2. Run Setup (admin)  
 3. Launch **Tekno3D - Postprocessor** from the Finish page / Start Menu  
 
-**Update the app:** Settings → App update → Check for update → Update & Install  
+**Update the app:** Settings â†’ App update â†’ Check for update â†’ Update & Install  
 (keeps AppData userdata)
 
 ---
